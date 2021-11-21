@@ -1,0 +1,6 @@
+---
+title: "README"
+author: "Lorenzo Lindo"
+date: "20/11/2021"
+output: github_document
+---
