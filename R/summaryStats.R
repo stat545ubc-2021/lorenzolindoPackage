@@ -1,4 +1,4 @@
-#' Summary Statistics Function
+#' Summary Statistics Function (summaryStats)
 #'
 #' This summary will calculate the following summary statistics for a given column in a
 #' dataset of interest: mean, median, max, min, standard deviation.
