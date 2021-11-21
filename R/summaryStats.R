@@ -34,14 +34,14 @@ summaryStats <- function(dataset_of_interest, col_of_interest, export_results = 
   }
 
   calculated_stats <- dataset_of_interest %>%
-    summarise(mean = mean({{col_of_interest}}, na.rm = TRUE),
-              median = median({{col_of_interest}}, na.rm = TRUE),
+    dplyr::summarise(mean = mean({{col_of_interest}}, na.rm = TRUE),
+              median = stats::median({{col_of_interest}}, na.rm = TRUE),
               max = max({{col_of_interest}}, na.rm = TRUE),
               min = min({{col_of_interest}}, na.rm = TRUE),
-              sdev = sd({{col_of_interest}}, na.rm = TRUE))
+              sdev = stats::sd({{col_of_interest}}, na.rm = TRUE))
 
   if(export_results == TRUE) {
-    write.csv(calculated_stats, "results.csv")
+    utils::write.csv(calculated_stats, "results.csv")
   }
 
   return(calculated_stats)
