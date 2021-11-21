@@ -12,6 +12,7 @@ You can explore this repository by going through the "summaryStats" folder to en
 
 #### STAT545B Assignments Completed So Far
 - [x] Assignment B-1 (completed 2 November 2021) Note, the source files for this assignment are in a different repository called "functions-lorenzolindo".
+- [x] Assignment B-2 (completed 20 November 2021)
 
 #### List of Files Contained within this Respository
 Filename | Description
