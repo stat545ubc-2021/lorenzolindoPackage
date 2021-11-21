@@ -26,8 +26,8 @@ This summary will calculate the following summary statistics for a given column 
 dataset of interest: mean, median, max, min, standard deviation.
 }
 \examples{
-summaryStats(penguins, bill_length_mm)
 summaryStats(mtcars, hp)
-summaryStats(vancouver_trees, height_range_id)
+summaryStats(iris, Sepal.Length)
+summaryStats(PlantGrowth, weight)
 
 }

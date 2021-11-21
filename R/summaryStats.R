@@ -11,7 +11,7 @@
 #' a csv containing the calculated summary statiatics is created within the main directory. This parameter was
 #' named this way so that the user can determine whether or not they want to export results to a csv.
 #'
-#' @import tidyverse datateachr
+#' @import tidyverse datateachr palmerpenguins dplyr
 #' @importFrom magrittr "%>%"
 #' @importFrom stats "median"
 #' @importFrom stats "sd"
@@ -21,9 +21,9 @@
 #' (export_results), then the function should also create a csv file.
 #'
 #' @examples
-#' summaryStats(penguins, bill_length_mm)
 #' summaryStats(mtcars, hp)
-#' summaryStats(vancouver_trees, height_range_id)
+#' summaryStats(iris, Sepal.Length)
+#' summaryStats(PlantGrowth, weight)
 #'
 #' @export
 
