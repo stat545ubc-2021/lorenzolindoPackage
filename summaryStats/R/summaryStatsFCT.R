@@ -3,14 +3,18 @@
 #' This summary will calculate the following summary statistics for a given column in a
 #' dataset of interest: mean, median, max, min, standard deviation.
 #'
-#' @param dataset_of_interest The dataset of interest
-#' @param col_of_interest The column of interest that want to calculate summary statistics for
+#' @param dataset_of_interest The dataset of interest that the user wants to analyze.
+#' This parameter was named this way so that it is very clear to the user what the argument should be.
+#' @param col_of_interest The column of interest that want to calculate summary statistics for.
+#' This parameter was named this way so that it is very clear to the user what the argument should be.
 #' @param export_results Logical argument, where the default argument is FALSE. If the user inputs TRUE,
-#' a csv containing the calculated summary statiatics is created within the main directory.
+#' a csv containing the calculated summary statiatics is created within the main directory. This parameter was
+#' named this way so that the user can determine whether or not they want to export results to a csv.
 #'
 #' @import tidyverse datateachr
 #'
-#' @return A tibble that contains the summary statistics.
+#' @return A data frame that contains the summary statistics. If the user specifies TRUE for the third argument
+#' (export_results), then the function should also create a csv file.
 #'
 #' @examples
 #' summaryStats(penguins, bill_length_mm)

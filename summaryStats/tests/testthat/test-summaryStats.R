@@ -22,5 +22,7 @@ test_that("An output file titled 'results.csv' is created in the main directory 
   expect_true(file.exists("results.csv"))
 })
 
+
+
 # This code was used because the output test file still existed even after running rm("results.csv").
 file.remove("results.csv")

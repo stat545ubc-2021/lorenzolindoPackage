@@ -4,25 +4,30 @@
 \alias{summaryStats}
 \title{Summary Statistics Function}
 \usage{
-summaryStats(dataset_of_interest, var_of_interest, export_results = FALSE)
+summaryStats(dataset_of_interest, col_of_interest, export_results = FALSE)
 }
 \arguments{
-\item{dataset_of_interest}{The dataset of interest}
+\item{dataset_of_interest}{The dataset of interest that the user wants to analyze.
+This parameter was named this way so that it is very clear to the user what the argument should be.}
 
-\item{var_of_interest}{The variable of interest}
+\item{col_of_interest}{The column of interest that want to calculate summary statistics for.
+This parameter was named this way so that it is very clear to the user what the argument should be.}
 
-\item{export_results}{Logical argument, where the default argument is FALSE. If TRUE,
-a csv is created within the main directory.}
+\item{export_results}{Logical argument, where the default argument is FALSE. If the user inputs TRUE,
+a csv containing the calculated summary statiatics is created within the main directory. This parameter was
+named this way so that the user can determine whether or not they want to export results to a csv.}
 }
 \value{
-A tibble that contains the summary statistics.
+A data frame that contains the summary statistics. If the user specifies TRUE for the third argument
+(export_results), then the function should also create a csv file.
 }
 \description{
-This summary will calculate the following summary statistics for a given variable in a
+This summary will calculate the following summary statistics for a given column in a
 dataset of interest: mean, median, max, min, standard deviation.
 }
 \examples{
 summaryStats(penguins, bill_length_mm)
 summaryStats(mtcars, hp)
+summaryStats(vancouver_trees, height_range_id)
 
 }
