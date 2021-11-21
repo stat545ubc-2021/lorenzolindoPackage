@@ -18,3 +18,4 @@ You can explore this repository by going through the "summaryStats" folder to en
 Filename | Description
 ---------|------------
 README.md | The present document which contains an overview of the contents of this repository
+summaryStats | A folder containing the source files for the "summaryStats" package that I created for this assignment
