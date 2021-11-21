@@ -12,6 +12,10 @@
 #' named this way so that the user can determine whether or not they want to export results to a csv.
 #'
 #' @import tidyverse datateachr
+#' @importFrom magrittr "%>%"
+#' @importFrom stats "median"
+#' @importFrom stats "sd"
+#' @importFrom utils "write.csv"
 #'
 #' @return A data frame that contains the summary statistics. If the user specifies TRUE for the third argument
 #' (export_results), then the function should also create a csv file.
